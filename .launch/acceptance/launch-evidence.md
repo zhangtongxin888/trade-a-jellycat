@@ -4,8 +4,8 @@ This is a live evidence table, not a success declaration. Browser, deployment, D
 
 | Check | Formal URL or resource | Checked at (UTC) | Actual result | Evidence |
 |---|---|---:|---|---|
-| Independent repository | `https://github.com/zhangtongxin888/trade-a-jellycat` | 2026-08-19T14:06:18Z | Local clone confirmed; push pending | `git remote -v` points only to the independent repository |
-| Formal repository commit | Independent repository `main` | 2026-08-19T14:06:18Z | Pending commit and push | To be filled after Codex commit |
+| Independent repository | `https://github.com/zhangtongxin888/trade-a-jellycat` | 2026-08-19T14:09:38Z | Passed | `git remote -v` points only to the independent repository and remote `main` was read back through the system proxy |
+| Formal repository commit | `50953630d50dc7579be77d9a9e2bdb9f06a44cbe` | 2026-08-19T14:09:38Z | Pushed to independent repository `main` | `git ls-remote origin refs/heads/main` returned the same full commit SHA |
 | Research gate | `.launch/research/research-approved.json` | 2026-08-19T14:04:25Z | Passed | Handoff validator passed; 13 facts approved, including identity, developer, and 9 gameplay/progression facts |
 | Design gate | `.launch/acceptance/design-approved.json` | 2026-08-19T14:06:18Z | Pending rendered 375/768/1440 checks | Static review passed after Codex corrections; browser render prohibited before lock |
 | Local build | `dist/` | 2026-08-19T14:04:25Z | Passed | Vite 8.2.1 built four HTML pages plus hashed CSS/JS |

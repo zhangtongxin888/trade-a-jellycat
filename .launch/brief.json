@@ -25,6 +25,8 @@
     ".launch/design/kimi-design-v1.json"
   ],
   "candidate_worktree_path": "/tmp/trade-a-jellycat-kimi-retry.RQLn3z",
+  "candidate_worktree_reclaimed_at": "2026-08-19T14:09:38Z",
+  "candidate_recovery_location": "/Users/zhangtongxin/.Trash/trade-a-jellycat-candidates.kqVkSE",
   "target_hosting_platform": "Cloudflare Pages",
   "providers": {
     "research": {"name": "Codex", "model": "gpt-5.6-sol", "fallback_from": "Grok"},

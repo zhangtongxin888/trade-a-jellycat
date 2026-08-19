@@ -67,6 +67,7 @@ check(
 check(home.includes(officialRobloxUrl), 'index.html: verified official Roblox link missing');
 
 const allPublicCopy = [...sourceText.values()].join('\n');
+check(!/\bExact\s+Our review\b/.test(allPublicCopy), 'public copy contains a broken sentence join');
 for (const forbidden of [
   'where every new plush comes from',
   'Every Jellycat in your inventory starts life inside a plush crate',
@@ -88,6 +89,15 @@ check(robots.includes(`Sitemap: ${domain}/sitemap.xml`), 'robots.txt sitemap URL
 const design = JSON.parse(await readFile(resolve(root, '.launch/design/kimi-design-v1.json'), 'utf8'));
 check(design.homepage?.hero?.primary_cta?.target === '/beginner-guide/', 'design package primary CTA mismatch');
 check(design.provider?.model === 'kimi-code/k3', 'design package must record the actual Kimi K3 model');
+
+const designApproval = JSON.parse(
+  await readFile(resolve(root, '.launch/acceptance/design-approved.json'), 'utf8'),
+);
+check(designApproval.approved === true, 'rendered design approval gate must pass before release');
+check(
+  Object.values(designApproval.viewport_results ?? {}).every((result) => result.status === 'passed'),
+  'all required rendered viewport checks must pass before release',
+);
 
 if (process.argv.includes('--dist')) {
   for (const page of pages) await access(resolve(root, page.output));

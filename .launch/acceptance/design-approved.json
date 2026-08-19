@@ -2,26 +2,23 @@
   "schema_version": 1,
   "run_id": "trade-a-jellycat-20260819-133352",
   "reviewed_by": "Codex",
-  "reviewed_at": "2026-08-19T14:06:18Z",
+  "reviewed_at": "2026-08-19T15:03:14Z",
   "design_package": ".launch/design/kimi-design-v1.json",
   "design_package_sha256": "33799849de5eab1b30342b070e5420e482184d63d9d6b9b11a2647f66aa34535",
-  "status": "pending_browser_render",
-  "approved": false,
+  "status": "approved",
+  "approved": true,
   "viewport_results": {
     "375": {
-      "status": "pending",
-      "static_review": "Responsive rules, full-width primary CTA, progressive mobile navigation, and overflow guards are present.",
-      "reason": "A rendered browser check is prohibited until the total-control task grants browser exclusivity."
+      "status": "passed",
+      "evidence": "Rendered at 375x812 with scrollWidth 375. The mobile menu toggle was visible, the primary /beginner-guide/ CTA measured 327x119px at 24.55px text, and the secondary Roblox action measured 242.4x56.6px at 16.14px text."
     },
     "768": {
-      "status": "pending",
-      "static_review": "Tablet grid and navigation breakpoints are present.",
-      "reason": "A rendered browser check is prohibited until the total-control task grants browser exclusivity."
+      "status": "passed",
+      "evidence": "Rendered at 768x900 with scrollWidth 768. Desktop navigation was visible, the toggle was hidden, three-column cards rendered without clipping, and the 400.6x84.98px primary CTA remained larger than the 251.7x58.24px secondary action."
     },
     "1440": {
-      "status": "pending",
-      "static_review": "The layout uses a capped 1120px container and a two-column hero.",
-      "reason": "A rendered browser check is prohibited until the total-control task grants browser exclusivity."
+      "status": "passed",
+      "evidence": "Rendered at 1440x900 with scrollWidth 1440. The 1120px container and two-column hero rendered as designed, and the 440.84x90.8px primary CTA remained larger than the 261.43x59.7px secondary action."
     }
   },
   "fact_reference_result": "passed_after_codex_corrections",
@@ -65,5 +62,5 @@
       "resolution": "Codex normalized the design-package identity field while retaining the stable core title in public navigation."
     }
   ],
-  "remaining_gate": "Render and inspect 375px, 768px, and 1440px viewports after browser exclusivity is granted, then change status only if all visual checks pass."
+  "remaining_gate": "None; visual, factual, asset, accessibility, and CTA checks passed."
 }

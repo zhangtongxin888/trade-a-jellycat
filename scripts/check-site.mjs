@@ -73,6 +73,7 @@ for (const forbidden of [
   'Every Jellycat in your inventory starts life inside a plush crate',
   'Asking for more costs nothing',
   'no official tiers or values exist',
+  'Three steps, straight from the verified creator description.',
 ]) {
   check(!allPublicCopy.includes(forbidden), `public copy contains rejected overstatement: ${forbidden}`);
 }

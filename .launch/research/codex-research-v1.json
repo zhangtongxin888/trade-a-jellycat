@@ -1,0 +1,203 @@
+{
+  "schema_version": 1,
+  "run_id": "trade-a-jellycat-20260819-133352",
+  "game": {
+    "official_name": "[MUTATIONS] Trade A Jellycat!",
+    "domain": "tradeajellycatguide.wiki",
+    "roblox_url": "https://www.roblox.com/games/126374004347567/Trade-A-Jellycat",
+    "place_id": "126374004347567",
+    "universe_id": "10287890163",
+    "developer": "Jellycats Wow!"
+  },
+  "provider": {
+    "name": "Codex",
+    "model": "gpt-5.6-sol",
+    "generated_at": "2026-08-19T13:39:23Z"
+  },
+  "status": "complete",
+  "fallback_reason": "Grok returned no structured research package after the allowed initial call and one retry.",
+  "facts": [
+    {
+      "id": "fact-001",
+      "category": "identity",
+      "subject": "official_game",
+      "claim": "The verified Roblox root place is titled [MUTATIONS] Trade A Jellycat!; Trade A Jellycat! is the stable core title without the temporary update tag.",
+      "source_url": "https://develop.roblox.com/v1/universes/10287890163/places?limit=100&sortOrder=Asc",
+      "source_type": "roblox",
+      "checked_at": "2026-08-19T13:39:23Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-002",
+      "category": "identity",
+      "subject": "developer",
+      "claim": "The official Roblox listing credits Jellycats Wow! as the experience creator.",
+      "source_url": "https://www.roblox.com/games/126374004347567/Trade-A-Jellycat",
+      "source_type": "official",
+      "checked_at": "2026-08-19T13:39:23Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-003",
+      "category": "identity",
+      "subject": "place_id",
+      "claim": "The verified root place ID is 126374004347567.",
+      "source_url": "https://develop.roblox.com/v1/universes/10287890163/places?limit=100&sortOrder=Asc",
+      "source_type": "roblox",
+      "checked_at": "2026-08-19T13:39:23Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-004",
+      "category": "identity",
+      "subject": "universe_id",
+      "claim": "Roblox maps place 126374004347567 to universe 10287890163.",
+      "source_url": "https://apis.roblox.com/universes/v1/places/126374004347567/universe",
+      "source_type": "roblox",
+      "checked_at": "2026-08-19T13:39:23Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-005",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "Players collect Jellycats as the central activity.",
+      "source_url": "https://develop.roblox.com/v1/universes/10287890163/places?limit=100&sortOrder=Asc",
+      "source_type": "creator",
+      "checked_at": "2026-08-19T13:39:23Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-006",
+      "category": "progression",
+      "subject": "progression",
+      "claim": "The creator description states that some Jellycats are rarer than others.",
+      "source_url": "https://develop.roblox.com/v1/universes/10287890163/places?limit=100&sortOrder=Asc",
+      "source_type": "creator",
+      "checked_at": "2026-08-19T13:39:23Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-007",
+      "category": "progression",
+      "subject": "progression",
+      "claim": "Players can open plush crates to grow their collection.",
+      "source_url": "https://develop.roblox.com/v1/universes/10287890163/places?limit=100&sortOrder=Asc",
+      "source_type": "creator",
+      "checked_at": "2026-08-19T13:39:23Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-008",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "Players can trade Jellycats with friends to complete their inventories.",
+      "source_url": "https://develop.roblox.com/v1/universes/10287890163/places?limit=100&sortOrder=Asc",
+      "source_type": "creator",
+      "checked_at": "2026-08-19T13:39:23Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-009",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "A trade starts when two players stand together on a trading board.",
+      "source_url": "https://develop.roblox.com/v1/universes/10287890163/places?limit=100&sortOrder=Asc",
+      "source_type": "creator",
+      "checked_at": "2026-08-19T13:39:23Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-010",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "Each player places the Jellycats they want to trade on the board.",
+      "source_url": "https://develop.roblox.com/v1/universes/10287890163/places?limit=100&sortOrder=Asc",
+      "source_type": "creator",
+      "checked_at": "2026-08-19T13:39:23Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-011",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "Both players must jump on the check mark to accept a trade.",
+      "source_url": "https://develop.roblox.com/v1/universes/10287890163/places?limit=100&sortOrder=Asc",
+      "source_type": "creator",
+      "checked_at": "2026-08-19T13:39:23Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-012",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "Jumping on the cross cancels a trade.",
+      "source_url": "https://develop.roblox.com/v1/universes/10287890163/places?limit=100&sortOrder=Asc",
+      "source_type": "creator",
+      "checked_at": "2026-08-19T13:39:23Z",
+      "confidence": "high"
+    },
+    {
+      "id": "fact-013",
+      "category": "gameplay",
+      "subject": "gameplay",
+      "claim": "Jumping on the plus sign asks the other player to add more Jellycats.",
+      "source_url": "https://develop.roblox.com/v1/universes/10287890163/places?limit=100&sortOrder=Asc",
+      "source_type": "creator",
+      "checked_at": "2026-08-19T13:39:23Z",
+      "confidence": "high"
+    }
+  ],
+  "new_player_guide": {
+    "first_10_minutes": [
+      "Open plush crates to begin building a collection.",
+      "Notice that the creator describes some Jellycats as rarer than others.",
+      "When ready to trade, stand on a trading board with another player."
+    ],
+    "core_loop": [
+      "Open plush crates.",
+      "Grow and review your collection.",
+      "Trade with friends to work toward a preferred inventory."
+    ],
+    "progression_path": [
+      "Build an initial collection through crates.",
+      "Learn which Jellycats are described as rarer.",
+      "Use trades to shape the collection you want."
+    ],
+    "common_mistakes": [
+      "Trying to start a trade without a second player on the trading board.",
+      "Using the check mark before reviewing the items placed on the board.",
+      "Confusing the cross, plus, and check-mark actions."
+    ],
+    "faq": [
+      "How do I start a trade?",
+      "How do I accept or cancel a trade?",
+      "What does the plus sign do?",
+      "How do I grow my collection?",
+      "Are all Jellycats equally rare?"
+    ]
+  },
+  "keywords": {
+    "primary": ["Trade A Jellycat guide", "Trade A Jellycat Roblox", "how to trade in Trade A Jellycat"],
+    "secondary": ["Trade A Jellycat beginner guide", "Trade A Jellycat plush crates", "Trade A Jellycat rarity", "Trade A Jellycat trading board"],
+    "search_intent": ["beginner tutorial", "trading controls", "collection progression", "FAQ"]
+  },
+  "uncertainties": [
+    "The supplied ID 84814013871277 resolves in the supplied radar page but returns no game from Roblox's universe lookup; it must not be presented as a playable Roblox place or verified universe ID.",
+    "The Roblox game detail endpoint currently marks the experience content restricted and returns placeholder title and creator fields, while the public root-place endpoint and indexed official listing preserve the title, creator description, and creator credit.",
+    "No reliable source was found for exact rarity tiers, crate odds, item values, update schedules, codes, or a complete item list."
+  ],
+  "forbidden_claims": [
+    "Do not present 84814013871277 as the playable place ID or verified universe ID.",
+    "Do not publish exact values, crate odds, rarity tiers, codes, or update dates without new approved evidence.",
+    "Do not imply this guide is affiliated with Roblox, Jellycat Limited, or the game creator.",
+    "Do not reuse the Roblox thumbnail or third-party brand art without documented permission."
+  ],
+  "suggested_topics": [
+    "Beginner guide",
+    "Trading-board controls",
+    "Collection progression",
+    "Common trading mistakes",
+    "Fact-checked FAQ"
+  ]
+}

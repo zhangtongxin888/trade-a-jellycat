@@ -1,0 +1,71 @@
+You are the front-end candidate designer in a gated launch pipeline. Work only in the current disposable candidate directory. It contains no .git and no remote. Do not run git, push, deploy, authenticate, browse accounts, or access any directory outside the current working directory.
+
+Build a polished, production-quality static multi-page guide site for Trade A Jellycat! at https://tradeajellycatguide.wiki. Use a lightweight Vite setup with plain HTML, CSS, and small vanilla JavaScript only. The site must build to dist with npm run build.
+
+You may create or edit only:
+- index.html
+- package.json
+- package-lock.json
+- vite.config.js
+- src/**
+- public/**
+- beginner-guide/**
+- trading-guide/**
+- faq/**
+- .launch/design/kimi-design-v1.json
+
+Read .launch/brief.json, .launch/research/codex-research-v1.json, and .launch/research/research-approved.json. The Codex research file contains each fact's text and the approval file contains the only allowed IDs. Cross-reference them and use only facts whose IDs appear in approved_fact_ids. Do not use rejected facts, uncertainties, generic genre assumptions, or standard-control assumptions as if they were game mechanics. Do not invent crate odds, item values, rarity tiers, codes, update dates, live player counts, or game status. Treat ID 84814013871277 as rejected and never publish it as a Roblox game ID. The verified official Roblox link is https://www.roblox.com/games/126374004347567/Trade-A-Jellycat. Show a short independent unofficial-guide disclaimer. Do not use the Roblox thumbnail, Jellycat brand art, game screenshots, external fonts, or any unlicensed image. Create original visual character with CSS shapes, icons, patterns, cards, and typography.
+
+Content requirements:
+- Home page with a distinctive soft-toy collector aesthetic, clear guide positioning, and strong information hierarchy.
+- The hero's largest and most prominent button must go to /beginner-guide/ on this site. A smaller secondary link may go to the official Roblox page.
+- Separate /beginner-guide/, /trading-guide/, and /faq/ pages with natural internal links between them.
+- Cover quick start, the verified core gameplay loop, an advanced/progression route limited to approved facts, common mistakes framed as practical advice derived from the documented controls, FAQ, and related-guide links.
+- Make it obvious when a statement is a practical tip rather than a confirmed game mechanic.
+- Include accessible nav, skip link, semantic headings, keyboard-visible focus, reduced-motion support, sufficient contrast, and no horizontal overflow.
+- Responsive rules must be deliberate for 375px, 768px, and 1440px widths.
+- Include page titles/descriptions, canonical URLs, Open Graph metadata without an image, robots.txt, sitemap.xml, and a useful 404.html.
+
+Design direction:
+- Warm cream paper background, ink/navy typography, raspberry accent, mint and sunny yellow supporting colors.
+- Original stitched-card and collector-tag motifs; playful but readable, not generic SaaS and not a clone of Roblox.
+- Use system fonts only. Keep animation subtle and disabled for reduced motion.
+
+Also create .launch/design/kimi-design-v1.json with exactly valid JSON and at least:
+{
+  "schema_version": 1,
+  "run_id": "trade-a-jellycat-20260819-133352",
+  "game": {"official_name": "Trade A Jellycat!", "domain": "tradeajellycatguide.wiki"},
+  "provider": {"name": "Kimi", "model": "kimi-code/k3", "generated_at": "UTC ISO timestamp"},
+  "research_approval_sha256": "3c0f12dcc5f2bddffef2d58531381a023f5f867835a17192f0a13d66c6b80c39",
+  "status": "ready_for_review",
+  "design_system": {
+    "theme": "",
+    "palette": {"bg": "", "surface": "", "text": "", "accent": ""},
+    "font_strategy": "",
+    "spacing_scale": [],
+    "responsive_rules": []
+  },
+  "homepage": {
+    "hero": {
+      "headline": "",
+      "subheadline": "",
+      "primary_cta": {"label": "Start the beginner guide", "target": "/beginner-guide/"},
+      "secondary_cta": {}
+    },
+    "sections": []
+  },
+  "page_map": [
+    {"path": "/", "purpose": ""},
+    {"path": "/beginner-guide/", "purpose": ""},
+    {"path": "/trading-guide/", "purpose": ""},
+    {"path": "/faq/", "purpose": ""}
+  ],
+  "components": [],
+  "assets": [],
+  "approved_fact_ids_used": [],
+  "files_changed": [],
+  "preview_command": "npm run dev"
+}
+
+Complete the candidate implementation autonomously, run npm install if needed, then run npm run build. In your final response, summarize files and build result only.

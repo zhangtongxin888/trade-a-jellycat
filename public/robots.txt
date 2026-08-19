@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tradeajellycatguide.wiki/sitemap.xml

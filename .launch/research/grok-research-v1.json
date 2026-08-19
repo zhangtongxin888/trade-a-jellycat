@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "run_id": "trade-a-jellycat-20260819-133352",
+  "game": {
+    "official_name": "Trade A Jellycat!",
+    "domain": "tradeajellycatguide.wiki",
+    "roblox_url": "",
+    "place_id": "",
+    "universe_id": "",
+    "developer": ""
+  },
+  "provider": {
+    "name": "Grok",
+    "model": "wrapper-default",
+    "generated_at": "2026-08-19T13:36:53Z"
+  },
+  "status": "failed",
+  "facts": [],
+  "new_player_guide": {
+    "first_10_minutes": [],
+    "core_loop": [],
+    "progression_path": [],
+    "common_mistakes": [],
+    "faq": []
+  },
+  "keywords": {"primary": [], "secondary": [], "search_intent": []},
+  "uncertainties": [
+    "Two real wrapper calls returned only a research preamble and no JSON payload."
+  ],
+  "forbidden_claims": [],
+  "suggested_topics": [],
+  "error": {
+    "category": "invalid_or_missing_output",
+    "attempts": 2,
+    "fallback": "Codex independent research"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "run_id": "trade-a-jellycat-20260819-133352",
+  "status": "上线前质检",
+  "game": {
+    "official_name": "Trade A Jellycat!",
+    "roblox_url": "https://www.roblox.com/games/126374004347567/Trade-A-Jellycat",
+    "place_id": "126374004347567",
+    "universe_id": "10287890163",
+    "supplied_tracking_id": "84814013871277",
+    "domain": "tradeajellycatguide.wiki",
+    "research_entry": "https://new-game-radar.pages.dev/genome/game/84814013871277/"
+  },
+  "repository": "https://github.com/zhangtongxin888/trade-a-jellycat",
+  "allowed_kimi_frontend_paths": [
+    "index.html",
+    "package.json",
+    "package-lock.json",
+    "vite.config.js",
+    "src/**",
+    "public/**",
+    "beginner-guide/**",
+    "trading-guide/**",
+    "faq/**",
+    ".launch/design/kimi-design-v1.json"
+  ],
+  "candidate_worktree_path": "/tmp/trade-a-jellycat-kimi-retry.RQLn3z",
+  "target_hosting_platform": "Cloudflare Pages",
+  "providers": {
+    "research": {"name": "Codex", "model": "gpt-5.6-sol", "fallback_from": "Grok"},
+    "design": {"name": "Kimi", "model": "kimi-code/k3"},
+    "code": {"name": "Codex", "model": "gpt-5.6-sol"}
+  },
+  "constraints": {
+    "browser_operations_allowed": false,
+    "deployment_allowed": false,
+    "primary_cta_target": "/beginner-guide/",
+    "facts_must_be_approved": true
+  }
+}

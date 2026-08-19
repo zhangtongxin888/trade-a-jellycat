@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "run_id": "trade-a-jellycat-20260819-133352",
+  "game": { "official_name": "[MUTATIONS] Trade A Jellycat!", "domain": "tradeajellycatguide.wiki" },
+  "provider": {
+    "name": "Kimi",
+    "model": "kimi-code/k3",
+    "generated_at": "2026-08-19T13:54:02Z"
+  },
+  "research_approval_sha256": "3c0f12dcc5f2bddffef2d58531381a023f5f867835a17192f0a13d66c6b80c39",
+  "status": "ready_for_review",
+  "post_processed_by": "Codex",
+  "post_processing_note": "Normalized the temporary update-tagged official name to match the approved research package; candidate UI continues to use the stable core title.",
+  "design_system": {
+    "theme": "Collector's shelf — warm cream paper with stitched cards, collector hang-tags, and an original pure-CSS plush mascot; playful soft-toy aesthetic, not generic SaaS and not a Roblox clone.",
+    "palette": {
+      "bg": "#f8eeda",
+      "surface": "#fffaf0",
+      "text": "#232f4b",
+      "accent": "#b8325e",
+      "supporting": { "mint": "#bfe6d2", "sunny_yellow": "#f6c945", "stitch": "#c9b58f" }
+    },
+    "font_strategy": "System font stack only (ui-rounded, SF Pro Rounded, Segoe UI, Roboto, sans-serif); fluid type via clamp() steps -1 to 4; no external fonts.",
+    "spacing_scale": ["0.5rem", "0.75rem", "1rem", "1.5rem", "2rem", "3rem", "4.5rem"],
+    "responsive_rules": [
+      "375px: single column everywhere, full-width primary hero CTA, hamburger nav below 768px, plush stage shrinks to 260px.",
+      "768px: card grids move to 2-3 columns, controls row of 3, footer becomes two columns.",
+      "1440px: content capped at 1120px container, hero splits 1.15fr/0.85fr with mascot on the right, fluid type tops out.",
+      "No horizontal overflow at any width (overflow-x guard plus min() container widths)."
+    ]
+  },
+  "homepage": {
+    "hero": {
+      "headline": "Collect, trade, and complete your Jellycat shelf.",
+      "subheadline": "Trade A Jellycat! is a Roblox collecting game by Jellycats Wow! where you open plush crates, grow a collection of soft-toy Jellycats, and trade with friends on the trading board — with every statement on this site marked as confirmed fact or practical tip.",
+      "primary_cta": { "label": "Start the beginner guide", "target": "/beginner-guide/" },
+      "secondary_cta": {
+        "label": "Play on Roblox (official)",
+        "target": "https://www.roblox.com/games/126374004347567/Trade-A-Jellycat"
+      }
+    },
+    "sections": [
+      "Hero with CSS plush mascot and dual CTAs",
+      "What is Trade A Jellycat! (three confirmed-fact cards: crates, rarity, trading board)",
+      "Core gameplay loop (numbered steps: crates → review → trade)",
+      "Trading-board controls teaser (check / cross / plus)",
+      "Quick-answer FAQ teaser",
+      "Related-guide cards"
+    ]
+  },
+  "page_map": [
+    { "path": "/", "purpose": "Positioning, hero CTAs, confirmed game overview, core loop, controls teaser, FAQ teaser" },
+    { "path": "/beginner-guide/", "purpose": "Quick start, verified core loop, approved-facts-only progression route, common mistakes framed as tips" },
+    { "path": "/trading-guide/", "purpose": "Step-by-step trading-board walkthrough, control reference, practical trading tips" },
+    { "path": "/faq/", "purpose": "Fact-checked FAQ with explicit honest-unknown answers for odds, tiers, codes, and updates" }
+  ],
+  "components": [
+    "Sticky header with accessible hamburger nav and aria-current",
+    "Skip link and landmark structure",
+    "Stitched card (solid border + dashed inner stitch)",
+    "Collector hang-tag chips",
+    "Confirmed / player-tip badge system",
+    "Numbered step list",
+    "Trading control glyph tiles (✓ / ✕ / +)",
+    "Native details/summary FAQ accordions",
+    "Pure-CSS plush mascot with bob animation (disabled under prefers-reduced-motion)",
+    "Footer with disclaimer and internal/external links"
+  ],
+  "assets": [
+    "No image, font, or media assets — all visuals are original CSS shapes, inline SVG paw logo, and glyphs; robots.txt, sitemap.xml, and 404.html served from public/"
+  ],
+  "approved_fact_ids_used": [
+    "fact-001",
+    "fact-002",
+    "fact-003",
+    "fact-005",
+    "fact-006",
+    "fact-007",
+    "fact-008",
+    "fact-009",
+    "fact-010",
+    "fact-011",
+    "fact-012",
+    "fact-013"
+  ],
+  "files_changed": [
+    "index.html",
+    "package.json",
+    "package-lock.json",
+    "vite.config.js",
+    "src/style.css",
+    "src/main.js",
+    "public/404.html",
+    "public/robots.txt",
+    "public/sitemap.xml",
+    "beginner-guide/index.html",
+    "trading-guide/index.html",
+    "faq/index.html",
+    ".launch/design/kimi-design-v1.json"
+  ],
+  "preview_command": "npm run dev"
+}

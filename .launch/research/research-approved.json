@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "run_id": "trade-a-jellycat-20260819-133352",
+  "game": {
+    "official_name": "[MUTATIONS] Trade A Jellycat!",
+    "domain": "tradeajellycatguide.wiki"
+  },
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-08-19T13:39:23Z",
+  "approved_fact_ids": [
+    "fact-001",
+    "fact-002",
+    "fact-003",
+    "fact-004",
+    "fact-005",
+    "fact-006",
+    "fact-007",
+    "fact-008",
+    "fact-009",
+    "fact-010",
+    "fact-011",
+    "fact-012",
+    "fact-013"
+  ],
+  "rejected_facts": [
+    {
+      "id": "supplied-id-84814013871277",
+      "reason": "The supplied radar record is reachable, but Roblox's official game API returns no universe for this ID; it is not approved as a playable place ID or verified universe ID."
+    },
+    {
+      "id": "unverified-values-and-odds",
+      "reason": "No reliable source supports specific values, exact rarity tiers, or crate odds."
+    }
+  ],
+  "notes": [
+    "The minimum gate passes: official_game and developer identities are approved, plus nine source-backed gameplay or progression facts.",
+    "Only approved_fact_ids may enter design or production copy.",
+    "The public site must show an independent unofficial-guide disclaimer and use no unlicensed game or brand imagery."
+  ],
+  "source_checks": [
+    {
+      "url": "https://www.roblox.com/games/126374004347567/Trade-A-Jellycat",
+      "http_status": 200,
+      "result": "Redirects to the current official listing; indexed official listing credits Jellycats Wow!."
+    },
+    {
+      "url": "https://apis.roblox.com/universes/v1/places/126374004347567/universe",
+      "http_status": 200,
+      "result": "Returned universeId 10287890163."
+    },
+    {
+      "url": "https://develop.roblox.com/v1/universes/10287890163/places?limit=100&sortOrder=Asc",
+      "http_status": 200,
+      "result": "Returned root place 126374004347567, title, and creator-authored gameplay description."
+    },
+    {
+      "url": "https://games.roblox.com/v1/games?universeIds=84814013871277",
+      "http_status": 200,
+      "result": "Returned an empty data array; supplied ID rejected as a verified universe ID."
+    }
+  ]
+}

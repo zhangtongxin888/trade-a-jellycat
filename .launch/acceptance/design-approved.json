@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "run_id": "trade-a-jellycat-20260819-133352",
+  "reviewed_by": "Codex",
+  "reviewed_at": "2026-08-19T14:06:18Z",
+  "design_package": ".launch/design/kimi-design-v1.json",
+  "design_package_sha256": "33799849de5eab1b30342b070e5420e482184d63d9d6b9b11a2647f66aa34535",
+  "status": "pending_browser_render",
+  "approved": false,
+  "viewport_results": {
+    "375": {
+      "status": "pending",
+      "static_review": "Responsive rules, full-width primary CTA, progressive mobile navigation, and overflow guards are present.",
+      "reason": "A rendered browser check is prohibited until the total-control task grants browser exclusivity."
+    },
+    "768": {
+      "status": "pending",
+      "static_review": "Tablet grid and navigation breakpoints are present.",
+      "reason": "A rendered browser check is prohibited until the total-control task grants browser exclusivity."
+    },
+    "1440": {
+      "status": "pending",
+      "static_review": "The layout uses a capped 1120px container and a two-column hero.",
+      "reason": "A rendered browser check is prohibited until the total-control task grants browser exclusivity."
+    }
+  },
+  "fact_reference_result": "passed_after_codex_corrections",
+  "asset_license_result": "passed_no_external_assets",
+  "accessibility_static_result": {
+    "status": "passed",
+    "checks": [
+      "Semantic headings and landmarks",
+      "Skip links",
+      "Keyboard focus styles",
+      "Reduced-motion support",
+      "Progressive navigation without JavaScript",
+      "Text contrast at or above 4.5:1 for reviewed small-text color pairs"
+    ]
+  },
+  "primary_cta_result": {
+    "status": "passed",
+    "label": "Start the beginner guide",
+    "target": "/beginner-guide/",
+    "is_largest_hero_action": true
+  },
+  "issues_and_resolutions": [
+    {
+      "issue": "Kimi overstated crates as the only source of every collectible.",
+      "resolution": "Codex changed public copy to the approved claim that opening plush crates grows the collection."
+    },
+    {
+      "issue": "Kimi introduced unsupported visibility, undo, cost, and value-list claims around trading.",
+      "resolution": "Codex removed the claims and kept only approved controls plus explicitly labelled practical cautions."
+    },
+    {
+      "issue": "Small mint and yellow label colors did not meet normal-text contrast.",
+      "resolution": "Codex darkened both foreground tokens; calculated contrast is 6.98:1 and 5.08:1 respectively."
+    },
+    {
+      "issue": "The mobile menu depended entirely on JavaScript.",
+      "resolution": "Codex made the navigation visible by default and collapsible only when JavaScript is active."
+    },
+    {
+      "issue": "Kimi used the stable core title while the research package records a temporary update tag.",
+      "resolution": "Codex normalized the design-package identity field while retaining the stable core title in public navigation."
+    }
+  ],
+  "remaining_gate": "Render and inspect 375px, 768px, and 1440px viewports after browser exclusivity is granted, then change status only if all visual checks pass."
+}

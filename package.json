@@ -1,0 +1,21 @@
+{
+  "name": "trade-a-jellycat-guide",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Independent unofficial guide site for Trade A Jellycat! on Roblox",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node scripts/check-site.mjs",
+    "check": "npm run test && npm run build && node scripts/check-site.mjs --dist"
+  },
+  "devDependencies": {
+    "vite": "^8.2.1",
+    "wrangler": "^4.124.0"
+  }
+}

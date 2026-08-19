@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "run_id": "trade-a-jellycat-20260819-133352",
-  "status": "上线前质检",
+  "status": "生产站已上线，GSC 待恢复",
   "game": {
     "official_name": "Trade A Jellycat!",
     "roblox_url": "https://www.roblox.com/games/126374004347567/Trade-A-Jellycat",
@@ -27,7 +27,7 @@
   "candidate_worktree_path": "/tmp/trade-a-jellycat-kimi-retry.RQLn3z",
   "candidate_worktree_reclaimed_at": "2026-08-19T14:09:38Z",
   "candidate_recovery_location": "/Users/zhangtongxin/.Trash/trade-a-jellycat-candidates.kqVkSE",
-  "target_hosting_platform": "Cloudflare Pages",
+  "target_hosting_platform": "Vercel",
   "providers": {
     "research": {"name": "Codex", "model": "gpt-5.6-sol", "fallback_from": "Grok"},
     "design": {"name": "Kimi", "model": "kimi-code/k3"},
@@ -35,7 +35,7 @@
   },
   "constraints": {
     "browser_operations_allowed": false,
-    "deployment_allowed": false,
+    "deployment_allowed": true,
     "primary_cta_target": "/beginner-guide/",
     "facts_must_be_approved": true
   }
